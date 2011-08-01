@@ -1,0 +1,62 @@
+ Fichero:	wpamagickey.c
+ Autor:		www.seguridadwireless.net
+ Algoritmo:	Dudux && Mambostar
+ Coder:		NirozMe|on
+ Fecha:		25-11-2010
+ 
+ 
+ Descripcion:	Calcula la contraseña WiFi por defecto de una red WLAN_XXXX o 
+		Jazztel_XXXX (WPA). Routers Comtrend (Telefonik & JazzTel) y 
+		Zyxel
+
+ 
+ Reutilizando codigo de wlandecrypter v1.3.x
+ 
+ 
+ Este programa es software libre; puedes redistribuirlo y/o modificarlo
+ bajo los terminos de la Licencia Publica General GNU (GPL) publicada
+ por la Free Software Foundation en su version numero 2.
+ Mira http://www.fsf.org/copyleft/gpl.txt.
+
+ Lo anterior quiere decir que si modificas y/o redistribuyes este codigo o 
+ partes del mismo debes hacerlo bajo las mismas condiciones anteriores, 
+ incluyendo el codigo fuente modificado y citando a los autores originales.
+
+ Este programa se distribuye SIN GARANTIA de ningun tipo. USALO BAJO TU PROPIO RIESGO.
+ 
+
+
+ v0.2.0: Añade router Zyxel (15/12/2010)
+ v0.1.0: Añade opcion para Essid cambiado (27-11-2010)
+ v0.0.2: Añade essid Jazztel (25-11-2010)
+ v0.0.1: Primera versión de prueba
+
+
+Requisitos:
+
+- Debes tener instalado openssl para poder compilar este codigo
+
+- Puedes instalarlo desde el repositorio de tu distribucion o
+  puedes ir a http://www.openssl.org/source/
+
+
+Instalacion:
+
+ make
+ make install (o sudo make install)
+
+
+Uso: 
+
+ WPAmagickey <ESSID> <BSSID> [fichero]
+
+ <ESSID> = NOESSID para Essid cambiado
+
+ ejemplo: WPAmagickey wlan_XXXX XX:XX:XX:XX:XX:XX
+ ejemplo: WPAmagickey jazztel_1234 aa:bb:cc:dd:ee:ff dicci
+ ejemplo: WPAmagickey noessid 00:11:22:33:44:55 dicci
+
+
+Mas informacion en foro.seguridadwireless.net
+
+o)
